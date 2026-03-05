@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botões HTML</title>
+    <link rel="stylesheet" href="aulinha.css">
+</head>
+<body>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    
+    <div class="sidebar" id="sidebar">
+        <button class="close-btn" onclick="toggleMenu()">✕</button>
+        <h3>Menu</h3>
+        <a href="index.html">🏠 Início</a>
+        <a href="formulario.html">📝 Formulários</a>
+        <a href="butons.html">🔘 Botões</a>
+        <a href="links.html">🔗 Links</a>
+        <a href="imagens.html">🖼️ Imagens</a>
+    </div>
+    
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+    
+    <header class="header">
+        <h1>🔘 Botões HTML</h1>
+        <p>Elementos interativos essenciais</p>
+    </header>
+
+    <main class="main">
+        <section class="section">
+            <h2>O que são Botões?</h2>
+            <p>Botões são elementos clicáveis que executam ações quando acionados. São fundamentais para interação do usuário com o site.</p>
+        </section>
+
+        <section class="section">
+            <h2>Tipos de Botões</h2>
+            <ul>
+                <li><strong>button</strong> - Botão genérico para ações JavaScript</li>
+                <li><strong>submit</strong> - Envia dados de formulário</li>
+                <li><strong>reset</strong> - Limpa campos do formulário</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>💼 Exemplo Prático: E-commerce</h2>
+            <p>Em lojas online, botões são cruciais para conversão de vendas:</p>
+            
+            <article class="article">
+                <h3>Botões de Ação em Loja Virtual</h3>
+                <div style="display: flex; flex-direction: column; gap: 15px; max-width: 400px;">
+                    <button style="background-color: #27ae60; color: white; padding: 15px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+                        🛒 Adicionar ao Carrinho
+                    </button>
+                    <button style="background-color: #e74c3c; color: white; padding: 15px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+                        ❤️ Adicionar aos Favoritos
+                    </button>
+                    <button style="background-color: #3498db; color: white; padding: 15px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+                        💳 Comprar Agora
+                    </button>
+                    <button style="background-color: #95a5a6; color: white; padding: 15px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+                        📊 Comparar Produtos
+                    </button>
+                </div>
+            </article>
+        </section>
+
+        <section class="section">
+            <h2>🎯 Uso no Mercado</h2>
+            <p><strong>E-commerce:</strong> Adicionar ao carrinho, finalizar compra</p>
+            <p><strong>Redes Sociais:</strong> Curtir, compartilhar, comentar</p>
+            <p><strong>Streaming:</strong> Play, pause, próximo episódio</p>
+            <p><strong>Bancos:</strong> Confirmar transação, cancelar operação</p>
+        </section>
+
+        <section class="section">
+            <h2>📱 Exemplo: Painel de Controle</h2>
+            <article class="article">
+                <h3>Dashboard Administrativo</h3>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; max-width: 400px;">
+                    <button style="background-color: #16a085; color: white; padding: 12px; border: none; border-radius: 5px; cursor: pointer;">
+                        ✅ Aprovar
+                    </button>
+                    <button style="background-color: #c0392b; color: white; padding: 12px; border: none; border-radius: 5px; cursor: pointer;">
+                        ❌ Rejeitar
+                    </button>
+                    <button style="background-color: #2980b9; color: white; padding: 12px; border: none; border-radius: 5px; cursor: pointer;">
+                        ✏️ Editar
+                    </button>
+                    <button style="background-color: #8e44ad; color: white; padding: 12px; border: none; border-radius: 5px; cursor: pointer;">
+                        🗑️ Excluir
+                    </button>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 - Estrutura de Sites Web</p>
+    </footer>
+    
+    <script>
+        function toggleMenu() {
+            document.getElementById('sidebar').classList.toggle('active');
+            document.getElementById('overlay').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

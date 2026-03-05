@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim</title>
+    <link rel="stylesheet" href="aulinha.css">
+</head>
+<body>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    
+    <div class="sidebar" id="sidebar">
+        <button class="close-btn" onclick="toggleMenu()">✕</button>
+        <h3>Menu</h3>
+        <a href="index.html">🏠 Início</a>
+        <a href="sobre.html">👤 Sobre Mim</a>
+        <a href="formulario.html">📝 Formulários</a>
+        <a href="butons.html">🔘 Botões</a>
+        <a href="links.html">🔗 Links</a>
+        <a href="imagens.html">🖼️ Imagens</a>
+    </div>
+    
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+    
+    <header class="header">
+        <h1>👤 Sobre Mim</h1>
+        <p>Conheça um pouco mais sobre quem sou</p>
+    </header>
+
+    <main class="main">
+        <section class="section" style="text-align: center;">
+            <img src="assets/ezequiel.jpeg" alt="Ezequiel Oliveira Rodrigues" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin: 20px auto; display: block; border: 5px solid #3498db;">
+            <h2>Ezequiel Oliveira Rodrigues</h2>
+            <p>18 anos | Técnico em Informática</p>
+        </section>
+
+        <section class="section">
+            <h3></h3>Quem Sou</h3>
+            <p>Me chamo Ezequiel Oliveira Rodrigues e tenho 18 anos. Sou uma pessoa apaixonada por tecnologia e sempre em busca de novos desafios.</p>
+        </section>
+
+        <section class="section">
+            <h3>💼 Carreira Profissional</h3>
+            <p>Atualmente trabalho na Techify, onde atuo como técnico em informática. É uma experiência incrível poder aplicar meus conhecimentos no dia a dia.</p>
+        </section>
+
+        <section class="section">
+            <h3>🏀 Esportes</h3>
+            <p>Gosto muito de esportes, principalmente basquete. É uma paixão que me acompanha e me ajuda a manter o equilíbrio entre corpo e mente.</p>
+        </section>
+
+        <section class="section">
+            <h3>🎬 Cinema</h3>
+            <p>Adoro filmes de ficção científica. Gosto de explorar universos alternativos e refletir sobre o futuro da humanidade através das histórias.</p>
+        </section>
+
+        <section class="section">
+            <h3>🎵 Música</h3>
+            <p>Sou apaixonado por música e escuto todos os dias. A música faz parte da minha rotina e me acompanha em todos os momentos.</p>
+        </section>
+
+        <section class="section">
+            <h3>📺 Séries</h3>
+            <p>Gosto muito de séries e minha favorita é How I Met Your Mother. Adoro o humor inteligente e as lições de vida que a série traz.</p>
+        </section>
+
+        <section class="section">
+            <h3>🧠 Filosofia</h3>
+            <p>Tenho grande interesse por filosofia. Gosto de questionar, refletir e buscar entender o sentido das coisas e da existência humana.</p>
+        </section>
+
+        <section class="section">
+            <h3>💭 Psicologia</h3>
+            <p>A psicologia me fascina. Entender o comportamento humano e os processos mentais é algo que considero essencial para o autoconhecimento.</p>
+        </section>
+
+        <section class="section">
+            <h3>🎯 Desafios</h3>
+            <p>Gosto de desafios e sempre busco sair da zona de conforto. Acredito que é através dos desafios que crescemos e evoluímos.</p>
+        </section>
+
+        <section class="section">
+            <h3>❤️ Filosofia de Vida</h3>
+            <p>Vivo com paixão em tudo que faço. Acredito que quando fazemos as coisas com amor e dedicação, os resultados são sempre melhores.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 - Ezequiel Oliveira Rodrigues</p>
+    </footer>
+    
+    <script>
+        function toggleMenu() {
+            document.getElementById('sidebar').classList.toggle('active');
+            document.getElementById('overlay').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

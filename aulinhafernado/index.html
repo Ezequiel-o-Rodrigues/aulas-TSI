@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de um Site Web</title>
+    <link rel="stylesheet" href="aulinha.css">
+</head>
+<body>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    
+    <div class="sidebar" id="sidebar">
+        <button class="close-btn" onclick="toggleMenu()">✕</button>
+        <h3>Menu</h3>
+        <a href="index.html">🏠 Início</a>
+        <a href="sobre.html">👤 Sobre Mim</a>
+        <a href="formulario.html">📝 Formulários</a>
+        <a href="butons.html">🔘 Botões</a>
+        <a href="links.html">🔗 Links</a>
+        <a href="imagens.html">🖼️ Imagens</a>
+    </div>
+    
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+    
+    <header class="header">
+        <h1>🌐 HEADER - Cabeçalho do Site</h1>
+        <p>O header é o topo do site. Contém logo, título principal e informações importantes que aparecem no início da página.</p>
+    </header>
+
+    <nav class="nav">
+        <h2>📋 BODY - Corpo do Site</h2>
+        <p>O body é o corpo do documento HTML. Contém todo o conteúdo visível da página: textos, imagens, formulários, menus e tudo que o usuário vê e interage.</p>
+        
+        <img src="assets/primeiraaula.png" alt="Estrutura de um site web" style="width: 100%; max-width: 800px; display: block; margin: 20px auto; border-radius: 10px;">
+    </nav>
+
+    <footer class="footer">
+        <h2>🔻 Rodapé (FOOTER)</h2>
+        <p>&copy; 2026 - Estrutura de Sites Web | Todos os direitos reservados</p>
+    </footer>
+    
+    <script>
+        function toggleMenu() {
+            document.getElementById('sidebar').classList.toggle('active');
+            document.getElementById('overlay').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

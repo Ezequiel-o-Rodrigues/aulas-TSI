@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links HTML</title>
+    <link rel="stylesheet" href="aulinha.css">
+</head>
+<body>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    
+    <div class="sidebar" id="sidebar">
+        <button class="close-btn" onclick="toggleMenu()">✕</button>
+        <h3>Menu</h3>
+        <a href="index.html">🏠 Início</a>
+        <a href="formulario.html">📝 Formulários</a>
+        <a href="butons.html">🔘 Botões</a>
+        <a href="links.html">🔗 Links</a>
+        <a href="imagens.html">🖼️ Imagens</a>
+    </div>
+    
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+    
+    <header class="header">
+        <h1>🔗 Links HTML</h1>
+        <p>Conectando páginas e conteúdos</p>
+    </header>
+
+    <main class="main">
+        <section class="section">
+            <h2>O que são Links?</h2>
+            <p>Links (âncoras) são elementos que permitem navegação entre páginas, seções ou recursos externos. São a base da web.</p>
+        </section>
+
+        <section class="section">
+            <h2>Tipos de Links</h2>
+            <ul>
+                <li><strong>Links Externos:</strong> Levam para outros sites (href="https://...")</li>
+                <li><strong>Links Internos:</strong> Navegam entre páginas do mesmo site</li>
+                <li><strong>Âncoras:</strong> Pulam para seções da mesma página (href="#secao")</li>
+                <li><strong>Links de Email:</strong> Abrem cliente de email (href="mailto:...")</li>
+                <li><strong>Links de Telefone:</strong> Iniciam chamada (href="tel:...")</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>💼 Exemplo Prático: Portal de Notícias</h2>
+            <p>Portais usam links para organizar conteúdo e navegação:</p>
+            
+            <article class="article">
+                <h3>Menu de Categorias</h3>
+                <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                    <a href="#" style="background-color: #3498db; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">
+                        📰 Notícias
+                    </a>
+                    <a href="#" style="background-color: #e74c3c; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">
+                        ⚽ Esportes
+                    </a>
+                    <a href="#" style="background-color: #9b59b6; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">
+                        🎬 Entretenimento
+                    </a>
+                    <a href="#" style="background-color: #27ae60; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">
+                        💰 Economia
+                    </a>
+                    <a href="#" style="background-color: #f39c12; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">
+                        🔬 Tecnologia
+                    </a>
+                </div>
+            </article>
+        </section>
+
+        <section class="section">
+            <h2>🎯 Uso no Mercado</h2>
+            <p><strong>E-commerce:</strong> Links para produtos, categorias, checkout</p>
+            <p><strong>Blogs:</strong> Links entre artigos relacionados</p>
+            <p><strong>Redes Sociais:</strong> Perfis, hashtags, menções</p>
+            <p><strong>Documentação:</strong> Navegação entre tópicos</p>
+        </section>
+
+        <section class="section">
+            <h2>📱 Exemplo: Rodapé Corporativo</h2>
+            <article class="article">
+                <h3>Links de Rodapé (Footer)</h3>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+                    <div>
+                        <h4 style="color: white; margin-bottom: 10px;">Empresa</h4>
+                        <a href="#" style="color: white; display: block; margin: 5px 0;">Sobre Nós</a>
+                        <a href="#" style="color: white; display: block; margin: 5px 0;">Carreiras</a>
+                        <a href="#" style="color: white; display: block; margin: 5px 0;">Imprensa</a>
+                    </div>
+                    <div>
+                        <h4 style="color: white; margin-bottom: 10px;">Suporte</h4>
+                        <a href="#" style="color: white; display: block; margin: 5px 0;">Central de Ajuda</a>
+                        <a href="#" style="color: white; display: block; margin: 5px 0;">Contato</a>
+                        <a href="#" style="color: white; display: block; margin: 5px 0;">FAQ</a>
+                    </div>
+                    <div>
+                        <h4 style="color: white; margin-bottom: 10px;">Legal</h4>
+                        <a href="#" style="color: white; display: block; margin: 5px 0;">Termos de Uso</a>
+                        <a href="#" style="color: white; display: block; margin: 5px 0;">Privacidade</a>
+                        <a href="#" style="color: white; display: block; margin: 5px 0;">Cookies</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="section">
+            <h2>🌐 Atributos Importantes</h2>
+            <ul>
+                <li><strong>target="_blank"</strong> - Abre link em nova aba</li>
+                <li><strong>rel="nofollow"</strong> - Indica ao Google para não seguir o link</li>
+                <li><strong>title="..."</strong> - Texto que aparece ao passar o mouse</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 - Estrutura de Sites Web</p>
+    </footer>
+    
+    <script>
+        function toggleMenu() {
+            document.getElementById('sidebar').classList.toggle('active');
+            document.getElementById('overlay').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
